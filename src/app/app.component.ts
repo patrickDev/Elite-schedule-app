@@ -45,6 +45,5 @@ export class MyApp {
 
   goToTournaments(){
     this.nav.push(TournamentsPage)
-
   }
 }
