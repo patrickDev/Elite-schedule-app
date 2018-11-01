@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { MyTeamsPage } from '../my-teams/my-teams';
 
 
 @Component({
@@ -17,5 +18,9 @@ public team: any = {}
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamDetailsPage');
   }
-
+goHome(){
+  //this.navCtrl.push(MyTeamsPage)
+  console.log('**parent', this.navCtrl.parent)
+  this.navCtrl.parent.parent.popToRoot()
+}
 }

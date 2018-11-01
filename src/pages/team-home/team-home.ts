@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TeamDetailsPage } from '../team-details/team-details';
 import { StandingsPage } from '../standings/standings';
+import { MyTeamsPage } from '../my-teams/my-teams';
 
 @Component({
   selector: 'page-team-home',
@@ -19,6 +20,11 @@ export class TeamHomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamHomePage');
+  }
+
+  goHome(){
+    //this.navCtrl.push(MyTeamsPage)
+    this.navCtrl.popToRoot()
   }
 
 }
