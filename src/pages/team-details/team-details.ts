@@ -18,9 +18,11 @@ public team: any = {}
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamDetailsPage');
   }
-goHome(){
+/*
+  goHome(){
   //this.navCtrl.push(MyTeamsPage)
   console.log('**parent', this.navCtrl.parent)
   this.navCtrl.parent.parent.popToRoot()
 }
+*/
 }
